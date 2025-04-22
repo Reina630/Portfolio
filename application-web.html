@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Applications Web - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+<!-- Menu de navigation -->
+<header>
+  <nav class="navbar">
+    <div class="logo">Aminatou TINAOU</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="apropos.html">À propos</a></li>
+      <li class="dropdown">
+        <a href="#portfolio" class="dropbtn">Portfolio <span class="arrow">&#9662;</span></a>
+        <ul class="dropdown-content">
+          <li><a href="application-web.html">Applications Web</a></li>
+          <li><a href="ppt.html">Présentations PPT</a></li>
+          <li><a href="video.html">Montages Vidéo</a></li>
+          <li><a href="design.html">Design Graphique</a></li>
+          <li><a href="#autres">Autres</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+  <!-- Applications Web -->
+  <section id="applications-web">
+    <h2>Applications Web</h2>
+    <div class="project-grid">
+
+      <!-- Projet 1 -->
+      <div class="project">
+        <h3>Gestion des Comptes Bancaires</h3>
+        <p>Application Java Spring pour gérer les comptes clients : ouverture, transferts, retraits, historique... Conçue avec une architecture claire et intuitive.</p>
+        <video controls>
+          <source src="videos/gestion-comptes.mp4" type="video/mp4" />
+          Votre navigateur ne prend pas en charge cette vidéo.
+        </video>
+      </div>
+
+      <!-- Projet 2 -->
+      <div class="project">
+        <h3>ZamaniQOS</h3>
+        <p>Développée chez Zamani Télécoms, cette appli affiche les KPIs et prédit les performances réseau grâce au machine learning et à la data visualisation.</p>
+        <video controls>
+          <source src="videos/zamaniqos.mp4" type="video/mp4" />
+          Votre navigateur ne prend pas en charge cette vidéo.
+        </video>
+      </div>
+
+      <!-- Projet 3 -->
+      <div class="project">
+        <h3>Eposta</h3>
+        <p>Solution web de gestion électronique du courrier (GED) utilisée à l'INS. Archivage, routage, consultation et traçabilité des documents au cœur de l'application.</p>
+        <video controls>
+          <source src="videos/eposta.mp4" type="video/mp4" />
+          Votre navigateur ne prend pas en charge cette vidéo.
+        </video>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Aminatou TINAOU. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>

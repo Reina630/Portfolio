@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap" rel="stylesheet" />
+    <script src="script.js" defer></script>
+    <title>Dashboard - Accidents Routiers</title>
+
+    <style>
+        /* Style spécifique pour l'image du dashboard */
+        .image-container img {
+            width: 100%;  /* L'image s'adapte à la largeur de son conteneur */
+            height: auto; /* Maintient le ratio d'aspect de l'image */
+            max-width: 100%; /* Empêche l'image de dépasser la largeur du conteneur */
+            border-radius: 8px; /* Ajoute des bords arrondis */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère pour l'image */
+        }
+
+        /* Responsive Design : ajustement de l'image sur petits écrans */
+        @media screen and (max-width: 768px) {
+            .image-container img {
+                width: 90%;  /* Réduit la largeur de l'image sur mobile */
+                max-width: 100%; /* Toujours ne pas dépasser la largeur de son conteneur */
+                margin: 0 auto; /* Centrer l'image */
+            }
+        }
+    </style>
+</head>
+<body>
+
+  <!-- Menu de navigation -->
+  <header>
+      <nav class="navbar">
+        <div class="logo">Aminatou TINAOU</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+          <li class="dropdown">
+            <a href="#portfolio" class="dropbtn">Portfolio <span class="arrow">&#9662;</span></a>
+            <ul class="dropdown-content">
+              <li><a href="application-web.html">Applications Web</a></li>
+              <li><a href="ppt.html">Présentations PPT</a></li>
+              <li><a href="video.html">Montages Vidéo</a></li>
+              <li><a href="design.html">Design Graphique</a></li>
+              <li><a href="#autres">Autres</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <section class="pdf-container">
+    <h2>Dashboard : Analyse des accidents routiers</h2>
+    <div class="image-container">
+      <img src="images/dashboard.png" alt="Dashboard - Accidents Routiers">
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Aminatou TINAOU - Tous droits réservés.
+  </footer>
+
+</body>
+</html>
