@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certifications - Aminatou TINAOU</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap" rel="stylesheet" />
+  <style>
+    .cert-detail-card {
+      display: none;
+    }
+    .cert-detail-card.active {
+      display: block;
+      animation: fadeInSlide 0.5s ease;
+    }
+    @keyframes fadeInSlide {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin: 3rem 0;
+    }
+    .pagination button {
+      padding: 0.8rem 1.5rem;
+      border: none;
+      background: linear-gradient(135deg, #00274d, #0056b3);
+      color: white;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      font-size: 1rem;
+    }
+    .pagination button:hover:not(:disabled) {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 87, 179, 0.4);
+    }
+    .pagination button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .pagination-info {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #00274d;
+      min-width: 150px;
+      text-align: center;
+    }
+    .dots-indicator {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #e9ecef;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .dot.active {
+      background: linear-gradient(135deg, #00274d, #0056b3);
+      width: 30px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Menu de navigation -->
+<header>
+  <nav class="navbar">
+    <div class="logo">Aminatou TINAOU</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="apropos.html">À propos</a></li>
+      <li class="dropdown">
+        <a href="#portfolio" class="dropbtn">Portfolio <span class="arrow">&#9662;</span></a>
+        <ul class="dropdown-content">
+          <li><a href="application-web.html">Applications Full Stack</a></li>
+          <li><a href="data-projects.html">Projets Data & Analytics</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a href="autres.html">Autres Réalisations</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section Certifications -->
+<section class="certifications-hero">
+  <div class="container">
+    <h1 class="page-title">🎓 Mes Certifications</h1>
+    <p class="page-subtitle">Formation continue et développement de compétences professionnelles</p>
+  </div>
+</section>
+
+<!-- Section Certifications Détaillées -->
+<section class="certifications-detailed">
+  <div class="container">
+    
+    <!-- Certification 1 -->
+    <div class="cert-detail-card active" data-cert="1">
+      <div class="cert-header">
+        <div class="cert-badge">
+          <img src="https://img.icons8.com/color/96/google-logo.png" alt="Google" class="cert-logo" />
+        </div>
+        <div class="cert-info">
+          <h2>Google Data Analytics Professional Certificate</h2>
+          <p class="cert-issuer">📚 Coursera - Google</p>
+          <p class="cert-date">📅 2024</p>
+        </div>
+      </div>
+      <div class="cert-body">
+        <h3>Compétences acquises :</h3>
+        <div class="skills-tags">
+          <span class="tag">Data Analysis</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Data Visualization</span>
+          <span class="tag">Spreadsheets</span>
+          <span class="tag">Tableau</span>
+          <span class="tag">R Programming</span>
+        </div>
+        <p class="cert-description">
+          Formation complète couvrant l'ensemble du processus d'analyse de données : collecte, nettoyage, analyse et visualisation. 
+          Maîtrise des outils essentiels pour transformer les données en insights exploitables.
+        </p>
+        <div class="cert-actions">
+          <a href="certificats/google.pdf" target="_blank" class="btn-cert btn-view">
+            📄 Voir le certificat
+          </a>
+         
+        </div>
+      </div>
+    </div>
+
+    <!-- Certification 2 -->
+    <div class="cert-detail-card" data-cert="2">
+      <div class="cert-header">
+        <div class="cert-badge">
+          <img src="https://img.icons8.com/color/96/microsoft.png" alt="Microsoft" class="cert-logo" />
+        </div>
+        <div class="cert-info">
+          <h2>Microsoft Power BI Data Analyst</h2>
+          <p class="cert-issuer">📚 Coursera - Microsoft</p>
+          <p class="cert-date">📅 2025</p>
+        </div>
+      </div>
+      <div class="cert-body">
+        <h3>Compétences acquises :</h3>
+        <div class="skills-tags">
+          <span class="tag">Power BI</span>
+          <span class="tag">DAX</span>
+          <span class="tag">Data Modeling</span>
+          <span class="tag">Business Intelligence</span>
+          <span class="tag">Interactive Dashboards</span>
+          <span class="tag">Power Query</span>
+        </div>
+        <p class="cert-description">
+          Certification professionnelle en Business Intelligence avec Power BI. Création de dashboards interactifs, 
+          modélisation de données avancée et formules DAX pour analyses complexes.
+        </p>
+        <div class="cert-actions">
+          <a href="certificats/powerBI.pdf" target="_blank" class="btn-cert btn-view">
+            📄 Voir le certificat
+          </a>
+         
+        </div>
+      </div>
+    </div>
+
+   
+    <!-- Certification 4 -->
+    <div class="cert-detail-card" data-cert="4">
+      <div class="cert-header">
+        <div class="cert-badge">
+          <div class="cert-icon-placeholder">📊</div>
+        </div>
+        <div class="cert-info">
+          <h2>Project Management Foundations</h2>
+          <p class="cert-issuer">📚 Coursera</p>
+          <p class="cert-date">📅 2023</p>
+        </div>
+      </div>
+      <div class="cert-body">
+        <h3>Compétences acquises :</h3>
+        <div class="skills-tags">
+          <span class="tag">Project Planning</span>
+          <span class="tag">Agile Methodology</span>
+          <span class="tag">Risk Management</span>
+          <span class="tag">Team Coordination</span>
+          <span class="tag">Scrum</span>
+          <span class="tag">Stakeholder Management</span>
+        </div>
+        <p class="cert-description">
+          Formation en gestion de projets couvrant les méthodologies Agile et traditionnelles. 
+          Compétences en planification, coordination d'équipe et gestion des risques.
+        </p>
+        <div class="cert-actions">
+          <a href="certificats/projects.pdf" target="_blank" class="btn-cert btn-view">
+            📄 Voir le certificat
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+      <button id="prevBtn" onclick="changeCert(-1)">← Précédent</button>
+      <span class="pagination-info">
+        <span id="currentCert">1</span> / <span id="totalCerts">4</span>
+      </span>
+      <button id="nextBtn" onclick="changeCert(1)">Suivant →</button>
+    </div>
+
+    <!-- Indicateurs -->
+    <div class="dots-indicator">
+      <span class="dot active" onclick="showCert(1)"></span>
+      <span class="dot" onclick="showCert(2)"></span>
+      <span class="dot" onclick="showCert(3)"></span>
+      <span class="dot" onclick="showCert(4)"></span>
+    </div>
+
+  </div>
+</section>
+
+<script>
+let currentCert = 1;
+const totalCerts = 4;
+
+function showCert(n) {
+  // Masquer toutes les certifications
+  const cards = document.querySelectorAll('.cert-detail-card');
+  cards.forEach(card => card.classList.remove('active'));
+  
+  // Afficher la certification demandée
+  const targetCard = document.querySelector(`[data-cert="${n}"]`);
+  if (targetCard) {
+    targetCard.classList.add('active');
+  }
+  
+  // Mettre à jour les indicateurs
+  currentCert = n;
+  document.getElementById('currentCert').textContent = currentCert;
+  
+  // Mettre à jour les dots
+  const dots = document.querySelectorAll('.dot');
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('active', index + 1 === currentCert);
+  });
+  
+  // Mettre à jour les boutons
+  document.getElementById('prevBtn').disabled = currentCert === 1;
+  document.getElementById('nextBtn').disabled = currentCert === totalCerts;
+  
+  // Scroll vers le haut de la section
+  document.querySelector('.certifications-detailed').scrollIntoView({ 
+    behavior: 'smooth', 
+    block: 'start' 
+  });
+}
+
+function changeCert(direction) {
+  const newCert = currentCert + direction;
+  if (newCert >= 1 && newCert <= totalCerts) {
+    showCert(newCert);
+  }
+}
+
+// Support du clavier
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowLeft') changeCert(-1);
+  if (e.key === 'ArrowRight') changeCert(1);
+});
+
+// Initialiser
+showCert(1);
+</script>
+
+<!-- Section Stats -->
+
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Aminatou TINAOU. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
